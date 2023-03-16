@@ -1,0 +1,66 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #63a1b8;
+    font-size: 62.5%;
+}
+
+.sobre-mi{
+    padding:10px;
+    background-color: #1581af3d;
+}
+a{
+    color: #63a1b8;
+    font-weight: bold;
+}
+
+.container{
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    border: 2px dotted #EEE8A9;
+    text-align: center;
+
+}
+
+.btn{
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 10px;
+    border-radius: 5%;
+    border: none;
+    background-color: #EEE8A9;
+    
+}
+
+@media only screen and (min-width: 1000px){
+    .container {
+        display: flex;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .foto{
+        align-items:center ;
+    }
+
+    .sobre-mi{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        text-align: justify;
+        
+    }
+    a{
+        width: 100px;
+        align-self: flex-end;
+        margin-top: 50px;
+    }
+
+    h3{
+      align-self: center;  
+    }
+
+}
