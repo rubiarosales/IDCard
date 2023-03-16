@@ -23,7 +23,11 @@ a{
     text-align: center;
 
 }
-
+img{
+    object-fit:contain;
+    max-width: 100%;
+    
+}
 .btn{
     text-decoration: none;
     font-size: 1.7rem;
@@ -63,4 +67,9 @@ a{
       align-self: center;  
     }
 
+    img{
+        object-fit:cover;
+        max-width: 600px;
+        
+    }
 }
