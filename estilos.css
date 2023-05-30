@@ -1,89 +1,105 @@
-html{
+* {
     margin: 0;
-    height: 100vh;
     padding: 0;
     box-sizing: border-box;
-    background-image:linear-gradient(#EEE8A9,#63a1b8 );
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
     font-family: 'Times New Roman', Times, serif;
+    --colorSec: #f8f01d;
+    --colorPrim: #1b1a1a;
+    --colorTer: #1f1e1e;
+    color: #fff;
 }
 
-.sobre-mi{
-    padding:5px;
-    /* background-color: #1581af3d; */
+header {
+    background-image: linear-gradient(to right, var(--colorPrim) 60%, var(--colorSec) 40%);
+    height: 300px;
+    position: relative;
+    display: flex;
+
 }
-a{
-    color: #63a1b8 ;
+
+.portada {
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    max-width: 50%;
+    max-height: 80%;
+    filter: drop-shadow(5px -5px 15px #3e3e40);
+
+}
+
+.intro {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+    height: 100px;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    /* font-size: 20px; */
+}
+
+.name {
+    color: var(--colorSec);
+}
+
+.sobre-mi {
+    padding-left: 100px;
+    padding-top: 10px;
+    background-color: var(--colorTer);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subrayado {
+    border: 1.5px solid var(--colorSec);
+    width: 60px;
+    height: 0;
+    margin: 5px 0px;
+
+}
+
+.info {
+    margin-top: 10px;
+    padding: 5px;
+    width: 90%;
+    line-height: 20px;
+    text-align: start;
+}
+
+
+
+.proyectos {
+    background-color: var(--colorPrim);
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#mis-proyectos, .card , .card-body{
+    background-color: transparent;
+}
+
+.contact{
+    padding: 10px;
+    background-color: var(--colorTer);
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-contact{
+    background-color: var(--colorSec);
+    border: 1px solid black;
+    color: var(--colorPrim);
     font-weight: bold;
+    height: 30px;
+    width: 100px;
+    padding: 2px;
 }
 
-.container{
-    font-size: 2rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    border: 2px solid #527f9b68;
-    box-shadow: 5px 5px #527f9b68;
-    background-color: #63a1b83c;
-    padding:10px;
-    margin: auto;
-    text-align: center;
-    max-width: 80%;
-
-}
-img{
-    object-fit:contain;
-    max-width: 60%;
-    /* max-height: 350px; */
-    
-}
-.btn{
-    text-decoration: none;
-    font-size: 1.7rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    padding: 5px 10px;
-    border-radius: 5%;
-    border: none;
-    background-color: #EEE8A9;
-    
-}
-
-@media only screen and (min-width: 800px){
-    html{
-        background-image:linear-gradient(#63a1b8,#EEE8A9 );
-    }
-
-    .container {
-        display: flex;
-        max-width: 800px;
-        margin: auto;
-    }
-
-    .foto{
-        align-items:center ;
-    }
-
-    .sobre-mi{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        text-align: justify;
-        
-    }
-    a{
-        width: 100px;
-        align-self: flex-end;
-        margin-top: 50px;
-    }
-
-    h3{
-      align-self: center;  
-    }
-
-    img{
-        
-        max-width: 90%;
-        
-    }
-    .btn{
-        margin: auto;
-    }
-}
+@media only screen and (min-width: 800px) {}
